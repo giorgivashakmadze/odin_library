@@ -1,0 +1,111 @@
+/* Basic reset for default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-header h1 {
+    color: #333;
+}
+
+.main-content {
+    display: grid;
+    gap: 10px;
+}
+
+.book-card {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.book-card p {
+    margin-bottom: 5px;
+}
+
+.delete-book,
+.toggle-read {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-book {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+.toggle-read {
+    background-color: #4682b4;
+    color: #fff;
+}
+
+#newBookButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.book-form {
+    text-align: center;
+}
+
+.book-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-form label,
+input[type="checkbox"] {
+    margin: 5px 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="checkbox"],
+button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
